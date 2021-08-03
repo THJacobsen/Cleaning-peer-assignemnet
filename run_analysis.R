@@ -74,8 +74,8 @@ tidy<- a_names_with %>% group_by(subjectId,activityId) %>% summarise_all(mean,na
 #Saving the new data
 
 #and keeping format as to begin with storing to folder
+write.table(tidy, "tidy.csv", row.name=FALSE)
 write.table(tidy, "tidy.txt", row.name=FALSE)
-
 
 
 
